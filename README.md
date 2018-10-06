@@ -4,7 +4,7 @@
 
 ## How to use ?
 
-A working demo is available here : 
+A working demo is available here : [demo](https://rezaxdi.github.io/apriltagjs/)
 
 AprilTagJS depends on opencv.js, so first you need to include it in your project. (Latest nightly builds are available here : [opencv.js](https://docs.opencv.org/master/opencv.js)
 
