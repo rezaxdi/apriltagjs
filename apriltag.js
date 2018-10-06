@@ -146,8 +146,7 @@ let decodeQuad = (quads, gray) => {
   return detections;
 }
 
-let detect = (imgElement, callback) => {
-  let mat = cv.imread(imgElement);
+let detect = (mat, callback) => {
   let gray = new cv.Mat();
   let img = new cv.Mat();
   cv.cvtColor(mat, gray, cv.COLOR_RGB2GRAY);
@@ -187,7 +186,6 @@ let detect = (imgElement, callback) => {
   }
   // 5 - Decode Quadrilaterals
   let detections = decodeQuad(quads, gray);
-  mat.delete();
   callback(detections);
 }; 
 
